@@ -36,6 +36,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "webpack",
       filename: "remoteEntry.js",
+      dev: true,
+      dts: true,
       exposes: {
         "./Related": "./src/Related.tsx",
       },
